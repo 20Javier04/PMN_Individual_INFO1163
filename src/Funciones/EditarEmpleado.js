@@ -4,7 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 function EditarEmpleado() {
     const { id } = useParams();
     const navigate = useNavigate();
-    const [listaEmpleados] = useState([
+    const [listaEmpleados, setListaEmpleados] = useState([
         {id: 1, nombre: 'Matias S'},
         {id: 2, nombre: 'Jorge A'}
     ]);

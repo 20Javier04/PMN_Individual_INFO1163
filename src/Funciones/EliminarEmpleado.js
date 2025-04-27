@@ -4,7 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 function EliminarEmpleado() {
     const { id } = useParams();
     const navigate = useNavigate();
-    // Simulación de una lista de empleados
+
     const listaEmpleados = [{id: 1, nombre: 'Matias S'}, {id: 2, nombre: 'Jorge A'}];
 
     const empleado = listaEmpleados.find(emp => emp.id === parseInt(id));
